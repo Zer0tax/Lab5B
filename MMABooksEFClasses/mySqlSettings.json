@@ -1,0 +1,5 @@
+{
+  "//Comment": "ConfigDB.cs calls this file.",
+
+  "ConnectionStrings": {"mySql": "server=127.0.0.1;uid=root;pwd=LaneCC;database=MMABooks"}
+}
