@@ -27,7 +27,7 @@ namespace MMABooksEFClasses.Models
         public string StateCode { get; set; } = null!; // FK to State table. This USED to be called "State".
         public string ZipCode { get; set; } = null!;
 
-        public virtual State State { get; set; } = null!; // Allows for foreign key relationships. This USED to be called StateNavigation.
+        public virtual State? State { get; set; } = null!; // Allows for foreign key relationships. This USED to be called StateNavigation.
         public virtual ICollection<Invoice> Invoices { get; set; } // Allows us to see collection of invoices?.
 
         public override string ToString()
