@@ -22,7 +22,8 @@ namespace MMABooksEFClasses.Models
         public string StateCode { get; set; } = null!;
         public string StateName { get; set; } = null!;
 
-        public virtual ICollection<Customer> Customers { get; set; } // ???
+        // <Customer>? is nullable tp allow http post requests to work - per Bryce
+        public virtual ICollection<Customer>? Customers { get; set; } // ???
 
         public override string ToString()
         {

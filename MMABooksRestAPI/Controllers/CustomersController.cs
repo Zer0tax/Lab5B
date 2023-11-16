@@ -63,6 +63,7 @@ namespace MMABooksRestAPI.Controllers
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCustomer(int id, Customer customer, string name, string address, string city, string stateCode, string zipCode)
+        // public async Task<IActionResult> PutCustomer(int id, Customer customer)
         // Updates 1 customer record.
         {
             if (id != customer.CustomerId)

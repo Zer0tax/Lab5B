@@ -1,6 +1,6 @@
 /* Author:  Lindy Stewart
  * Editor:  Eric Robinson L00709820
- * Date:    11/05/23
+ * Date:    11/15/23
  * Course:  Lane Community College CS234 Advanced Programming: C# (.NET)
  * Lab:     4 
  * Purpose: Tests Customer.cs
