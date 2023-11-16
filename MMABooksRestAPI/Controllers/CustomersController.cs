@@ -1,6 +1,6 @@
 ﻿/* Author:  Auto-generated
  * Editor:  Eric Robinson L00709820
- * Date:    11/12/23
+ * Date:    11/15/23
  * Course:  Lane Community College CS234 Advanced Programming: C# (.NET)
  * Lab:     5
  * Purpose: 
@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MessagePack.Formatters;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -132,6 +133,13 @@ namespace MMABooksRestAPI.Controllers
         private bool CustomerExists(int id)
         {
             return (_context.Customers?.Any(e => e.CustomerId == id)).GetValueOrDefault();
+        }
+
+        private void BogusMethod()
+        // This method does nothing useful.
+        {
+            int i = 0;
+            i++;
         }
     } // end class CustomersController : ControllerBase
 } // end namespace MMABooksRestAPI.Controllers
